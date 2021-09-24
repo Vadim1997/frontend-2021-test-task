@@ -1,0 +1,60 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto&display=swap');
+
+body {
+    font-family: 'Roboto', sans-serif;
+    font-size: 20px;
+    font-weight: 600;
+    display: flex;
+    justify-content: center;
+}
+
+.general-map {
+    border: 1px solid #cbd3cd;
+    height: 40px;
+    width: 40px;
+    margin: 1px;
+}
+
+.infected {
+    background: #ffcdce;
+}
+
+.uninfected {
+    background: #ceffce;
+}
+
+.ocean {
+    background: #cecdfe;
+}
+
+.infected:hover {
+    transition: 0.5s ease;
+    box-shadow: 0 0 10px #F2B4B4;
+    background-color: #F2B4B4;
+    content: url("images/infected.svg");
+}
+
+.uninfected:hover {
+    transition: 0.5s ease;
+    box-shadow: 0 0 10px #A7F1C0;
+    background-color: #A7F1C0;
+    content: url("images/uninfected.svg");
+}
+
+.ocean:hover {
+    transition: 0.5s ease;
+    box-shadow: 0 0 10px #B5C7E0;
+    background-color: #B5C7E0;
+    content: url("images/ocean.svg");
+}
+
+.box-items {
+    display: flex;
+}
+
+.wrap {
+    padding: 15px 20px;
+    border: 1px solid #e8e8ed;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
